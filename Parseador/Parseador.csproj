@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include=".antlr\aritmetica.interp" />
+    <None Include=".antlr\aritmetica.tokens" />
+    <None Include=".antlr\aritmeticaLexer.interp" />
+    <None Include=".antlr\aritmeticaLexer.java" />
+    <None Include=".antlr\aritmeticaLexer.tokens" />
+    <None Include=".antlr\aritmeticaParser.java" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Antlr4.Runtime.Standard" Version="4.9.2" />
+  </ItemGroup>
+
+</Project>
